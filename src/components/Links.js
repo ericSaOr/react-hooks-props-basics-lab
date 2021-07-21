@@ -1,16 +1,14 @@
-import React from "react";
-import About from  "./About";
+import React from 'react';
 
-
-function Links ({user.Links}) {
-
-  return(
-    <div>
-<a href = {user.Links} />
-
-
-
-
-</div>
-)
+function Links(props) {
+	return (
+		<div>
+			<h3>Links</h3>
+			<a href={props.github}>{props.github}</a>
+			<hr />
+			<a href={props.linkedin}>{props.linkedin}</a>
+		</div>
+	);
 }
+
+export default Links;
